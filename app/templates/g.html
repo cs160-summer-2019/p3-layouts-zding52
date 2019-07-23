@@ -13,8 +13,37 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body{
+      background-color: purple;
+/*        justify-content: center; */
+    } 
+   .box {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: purple;
+/*       justify-content: center; */
+          }
+    .box > div {
+  background-color: #f1f1f1;
+  width: 500px;
+  margin: 30px;
+  text-align: center;
+  line-height: 600px;
+  font-size: 30px;
+}
+      
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+      <div class="box">
+          <div>One</div>
+          <div>Two</div>
+         <div>Three</div>
+      
+<!--           <div>Two</div> -->
+    </div>
+ 
+      
 	</body>
 </html>

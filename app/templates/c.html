@@ -13,8 +13,50 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body{
+      background-color: purple;
+      
+    } 
+   .box {
+  display: flex;
+  flex-wrap: nowrap;
+     
+  background-color: purple;
+      justify-content: center;
+  
+          }
+    .box > div {
+  background-color: #f1f1f1;
+  width: 215px;
+  margin: 15px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+}
+    .six{
+       background-color: #f1f1f1;
+  width: 215px;
+  margin: 15px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+     
+/*       flex: 1 1 auto; */
+    }
+      
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+      <div class="box">
+          <div>One</div>
+          <div>Two</div>
+         <div>Three</div>
+          <div>Four</div>
+         <div>Five</div>
+<!--           <div>Two</div> -->
+    </div>
+    <div class = "box">
+      <div class="six">Six</div>     </div> 
 	</body>
 </html>
